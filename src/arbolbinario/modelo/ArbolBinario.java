@@ -436,6 +436,10 @@ public class ArbolBinario {
         return l;
     }
     
+    public void borrarNivel(){
+        
+    }
+    
     public void llenarArbol(String datos) throws ArbolBinarioException
     {
         String[] arrayDatos= datos.split(",");
@@ -572,5 +576,35 @@ public class ArbolBinario {
             imprimirNivel(pivote.getIzquierda(), nivel2 + 1);
         }
     }
-      
+    //Insertar el numero del nivel que se quiere eliminar
+    public void borrarNivel(int datoNivel, datoNivel ubicacion){
+        niveles = new String[altura + 1];
+        // Si el nivel no existe enviar mensaje "El nivel no se encuentra en el árbol"
+        if(datoNivel != imprimirNivel() ){
+            System.out.println("El nivel no se encuentra en el arbol");
+        }
+        // Si el nivel si existe 
+        else{
+            //Raiz debe preguntar a temp si algun nodo en el nivel a eliminar tiene hijos
+        }
+                //Si no, eliminar todos los nodos con el nivel igual al número ingresado y enviar 
+                //mensaje "El nivel ha sido eliminado"
+                // Si sí, 
+                    //recorrer los niveles hasta llegar al nivel ingresado
+                    //llamar a temp para que conecte el nodo menor del nivel mayor al ingresado
+                    // y lo conecte con el nodo que contenia el nodo del nivel eliminado
+                    // de esta manera los nodos del nivel seleccionado será eliminado                    
+                    // al eliminar, enviar mensaje "El nivel ha sido eliminado"
+                    
+    public void multiplicarArbol(){
+      //preguntar si el arbol esta vacio 
+      //si esta vacio entonces enviar mensaje "El arbol no tiene datos"
+      //si si tiene datos 
+      //Ingresar el numero que desea multiplicar
+      // llamar a temp para que recorra todos los nodos y los multiplique por el dato ingresado 
+      // actualizar el grafico 
+      //mostrar los nuevos datos 
+    }
+    }
+
 }
